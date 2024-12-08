@@ -22,11 +22,12 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Integer userno;
-	Integer CONTACTNO;
-	Integer LOCATIONNO;
 	String role;
 	String SURNAME;
-	String username;
-	String PASSWORD;
+	String firstname;
+	String email;
+	String adresse;
+	String password;
+	
 }
 

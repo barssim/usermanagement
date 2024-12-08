@@ -4,10 +4,10 @@ server:
 spring:
  application:
     name: usermanagement
-    Desc: managing of solide users
+    Desc: manage solide users
     
  datasource:
-   url: jdbc:mysql://localhost:3306/tola
+   url: jdbc:mysql://localhost:3306/userDB
    username: root
    password: Tasnim2017#
    driver-class-name: com.mysql.cj.jdbc.Driver

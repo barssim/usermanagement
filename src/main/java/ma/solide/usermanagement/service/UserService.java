@@ -10,7 +10,7 @@ import ma.solide.usermanagement.model.User;
 import ma.solide.usermanagement.repository.UserRepository;
 
 @Service
-public class UserFinder {
+public class UserService {
 	@Autowired
 	private UserRepository UserRepository;
 
@@ -24,5 +24,10 @@ public class UserFinder {
 
 	public List<User> findAllUsers() {
 		return UserRepository.findAll();
+	}
+
+	public User createUser(User user) {
+
+		return UserRepository.save(user); // Inserts or updates the user
 	}
 }
