@@ -29,6 +29,7 @@ public class UserServiceController {
 	UserService userService;
 
 	// call example: http://localhost:8091/users/4
+	@CrossOrigin(origins = "http://localhost:3000") 
 	@GetMapping("/{userNo}")
 	public ResponseEntity<Object> getUserByUserNo(@PathVariable("userNo") Integer userNo) {
 		logger.info("retrievs User by userno");
@@ -46,7 +47,8 @@ public class UserServiceController {
 
 		return new ResponseEntity<>(user, HttpStatus.OK);
 	}
-
+	
+	@CrossOrigin(origins = "http://localhost:3000") 
 	@RequestMapping("/")
 	public ResponseEntity<Object> getAllUsers() {
 		logger.info("retrievs all users");

@@ -12,5 +12,6 @@ import ma.solide.usermanagement.model.User;
 public interface UserRepository extends JpaRepository<User, Integer> {
 	Optional<User> findById(Integer id);
 	List<User> findAll();
+	boolean existsBySURNAMEAndPassword(String username, String password);
 
 }
