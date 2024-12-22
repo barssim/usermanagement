@@ -23,7 +23,7 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Integer userno;
 	String role;
-	String SURNAME;
+	String surname;
 	String firstname;
 	String email;
 	String adresse;

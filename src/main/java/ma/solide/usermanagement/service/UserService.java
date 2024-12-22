@@ -25,7 +25,7 @@ public class UserService {
 
 	public boolean existsByUsernameAndPassword(String username, String password)
 	{
-		return UserRepository.existsBySURNAMEAndPassword(username, password);
+		return UserRepository.existsBySurnameAndPassword(username, password);
 		
 	}
 	public List<User> findAllUsers() {
