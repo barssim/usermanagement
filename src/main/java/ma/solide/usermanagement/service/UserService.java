@@ -23,7 +23,7 @@ public class UserService {
 		return user;
 	}
 
-	public boolean existsByUsernameAndPassword(String username, String password)
+	public boolean existsBySurnameAndPassword(String username, String password)
 	{
 		return UserRepository.existsBySurnameAndPassword(username, password);
 		

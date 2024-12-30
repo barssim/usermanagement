@@ -5,11 +5,11 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
 
 # Copy the Spring Boot jar file into the container
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+ARG WAR_FILE=target/*.war
+COPY ${WAR_FILE} app.war
 
 # Expose the default Spring Boot port
 EXPOSE 8091
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.war"]
